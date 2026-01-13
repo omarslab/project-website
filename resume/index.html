@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Omar's Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="/" class="nav__logo">Omar's Lab</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../projects/" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="./" class="nav__link active-link">Resume</a></li>
+                    <li class="nav__item"><a href="../contact/" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== RESUME PDF FULL PAGE =====-->
+    <section class="resume-full">
+        <br>
+        <iframe src="../assets/img/Omar_Resume.pdf" class="resume-iframe">
+        </iframe>
+    </section>
+
+   
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

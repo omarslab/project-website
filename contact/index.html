@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Omar's Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="/" class="nav__logo">Omar's Lab</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../projects/" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="../resume/" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="./" class="nav__link active-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== CONTACT SECTION =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+    
+        <div class="contact__container bd-grid">
+            <div class="contact__card">
+                <h3 class="contact__headline">
+                    <i class='bx bx-radar'></i> Best way to reach me
+                </h3>
+                <p class="contact__text">
+                    Email is the fastest and most reliable way to contact me. I usually respond within 24 hours.
+                </p>
+    
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <span>mm.omarshariff@gmail.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="contact__item">
+                        <i class='bx bxl-linkedin'></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <span>linkedin.com/in/mohamed-oma-r/</span>
+                        </div>
+                    </div>
+    
+                    <div class="contact__item">
+                        <i class='bx bxl-github'></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <span>github.com/omarslab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

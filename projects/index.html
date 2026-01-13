@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Projects - Omar's Lab</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="/" class="nav__logo">Omar's Lab</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="./" class="nav__link active-link">Projects</a></li>
+                    <li class="nav__item"><a href="../resume/" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="../contact/" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== PROJECTS SECTION =====-->
+    <section class="projects">
+        <h1 class="home__title home__title-color">Projects</h1>
+
+        <ul class="projects-list">
+            <li class="project-item">
+                <img class="project-thumb" src="../assets/img/horn pcb.png" alt="Autonomous RC Car"
+                    data-project="autonomous-rc-car">
+                <div class="project-info">
+                    <h3 class="project-title" data-project="autonomous-rc-car">Solar Vehicle Project</h3>
+                    <p class="project-desc">As part of my school’s solar vehicle project, I design schematics and pcb’s as well as develop code and test them for
+                    both the horn component and battery management system of the vehicle. 
+                    <br> This includes everything from the initial
+                    schematic in Altium Designer to component selection, microcontroller programming, debugging with oscilloscopes and logic
+                    analyzers to hands on tasks such as spot welding battery cells into packs or assembling / soldering pcb’s by hand or
+                    with a stencil and reflow oven.</p>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img class="project-thumb" src="../assets/img/av_research.jpg"
+                    alt="AV Research" data-project="battery-management">
+                <div class="project-info">
+                    <h3 class="project-title" data-project="battery-management">Research : Autonomous Vehicles over Bandwidth Constrained Networks</h3>
+                    <p class="project-desc">Under the Computer Network and AI Research Lab, I research and develop autonomous vehicle and teleoperation systems
+                    using multimodal sensor fusion (camera, LiDAR, radar) and ROS2 to support safe operation over long distances and
+                    bandwidth constrained networks. I am also Investigating the deployment of autonomous indoor robots using embedded edge
+                    computing on a NVIDIA Jetson & Hunter 2.0 robot from AgileX robotics
+                    </p>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img class="project-thumb" src="../assets/img/robot_research.png"
+                    alt="Indoor Robot Navigation" data-project="indoor-navigation">
+                <div class="project-info">
+                    <h3 class="project-title" data-project="indoor-navigation">Research : Robotic Manipulation</h3>
+                    <p class="project-desc">Under the Human Centered Computing Lab, I am conducting research on robotic manipulation using diffusion based learning
+                    to enable robots to adaptively choose among multiple valid actions in uncertain, real world environments</p>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img class="project-thumb" src="../assets/img/rc_car.jpg"
+                    alt="Portfolio Website" data-project="portfolio-website">
+                <div class="project-info">
+                    <h3 class="project-title" data-project="portfolio-website">Obstacle Avoiding RC Car</h3>
+                    <p class="project-desc">As part of a personal project I developed an obstacle avoiding RC car using a servo mounted VL53L1X Time of Flight
+                    sensor for obstacle detection / distance measurement, an ESP32 nano for processing along with a DRV8835 carrier to drive
+                    the motors. I plan to scale this project by implementing a camera with robot vision algorithms to classify objects and
+                    include decision making rather than predefined commands..</p>
+                </div>
+            </li>
+            <li class="project-item">
+                <img class="project-thumb" src="../assets/img/baby_pcb_cad.png" alt="Baby Monitor"
+                    data-project="indoor-navigation">
+                <div class="project-info">
+                    <h3 class="project-title" data-project="indoor-navigation">Baby Monitor</h3>
+                    <p class="project-desc">For an Intro to Microcontrollers course, my peers and I developed a baby monitor device centered around two breadboards with 
+                        a PIC24 microcontroller for signal processing. The device also used HC-05 and HC-06 bluetooth modules for wireless data
+                    transfer, an 8 segment NeoPixel LED strip to visualize audio amplitude levels, an LCD for displaying temperature and
+                    system status, and integrated microphone and temperature sensors for environmental sensing and monitoring
+                <br> <br>
+                After the initial project, I scaled the design by creating my first ever custom PCB and CAD enclosure, integrating all
+                components into a compact and manufacturable design. Since then, I’ve continued to refine and develop increasingly
+                complex systems, as reflected in my work on the solar vehicle project and other embedded hardware designs.
+            </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Image Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="gallery-close">&times;</span>
+        <img class="gallery-content" id="galleryImage" alt="Project Gallery">
+    </div>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title"></p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Omar's Lab. All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        }
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+
+        // Image gallery functionality
+        const galleryModal = document.getElementById('galleryModal');
+        const galleryImage = document.getElementById('galleryImage');
+        const galleryClose = document.querySelector('.gallery-close');
+        const projectThumbs = document.querySelectorAll('.project-thumb');
+
+        projectThumbs.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                galleryModal.classList.add('show');
+                galleryImage.src = this.src;
+                galleryImage.alt = this.alt;
+            });
+        });
+
+        galleryClose.addEventListener('click', function () {
+            galleryModal.classList.remove('show');
+        });
+
+        galleryModal.addEventListener('click', function (e) {
+            if (e.target === galleryModal) {
+                galleryModal.classList.remove('show');
+            }
+        });
+
+        // Project title click functionality
+        const projectTitles = document.querySelectorAll('.project-title');
+
+        projectTitles.forEach(title => {
+            title.addEventListener('click', function () {
+                const projectId = this.getAttribute('data-project');
+                // Navigate to project detail page, uncomment out in future iteration
+                //window.location.href = `project-details.html?project=${projectId}`;
+            });
+        });
+    </script>
+</body>
+
+</html>
