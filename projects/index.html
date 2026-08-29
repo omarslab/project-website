@@ -38,22 +38,32 @@
 
         <ul class="projects-list">
             <li class="project-item">
-                <img class="project-thumb" src="../assets/img/horn pcb.png" alt="Autonomous RC Car"
-                    data-project="autonomous-rc-car">
+                <img class="project-thumb" src="../assets/img/svp_cover.jpg" alt="Autonomous RC Car"
+                    data-project="autonomous-rc-car"
+                    data-caption="Gaia - Previous Solar Vehicle Model">
                 <div class="project-info">
                     <h3 class="project-title" data-project="autonomous-rc-car">Solar Vehicle Project</h3>
                     <p class="project-desc">As part of my school’s solar vehicle project, I design schematics and pcb’s as well as develop code and test them for
-                    both the horn component and battery management system of the vehicle. 
+                    both the horn component and battery management system of the vehicle.
                     <br> This includes everything from the initial
                     schematic in Altium Designer to component selection, microcontroller programming, debugging with oscilloscopes and logic
                     analyzers to hands on tasks such as spot welding battery cells into packs or assembling / soldering pcb’s by hand or
-                    with a stencil and reflow oven.</p>
+                    with a stencil and reflow oven.
+                <br>For privacy reasons I can't show current designs or other complex battery designs but these are some horn designs & old debugging that I did.
+                </p>
+                    <div class="project-sub-images">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/welding.jpg" alt="Solar Vehicle Detail 1" data-caption="Spot welding li-ion cells to form battery modules" data-gallery-group="solar-vehicle">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/horn old.jpg" alt="Solar Vehicle Detail 2" data-caption="Old revision of a horn pcb I made" data-gallery-group="solar-vehicle">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/soldered.jpg" alt="Solar Vehicle Detail 3" data-caption="Hand soldered version of previous design" data-gallery-group="solar-vehicle">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/isospi.jpg" alt="Solar Vehicle Detail 4" data-caption="Debugged isoSPI signaling using a custom pcb board with 3 Ethernet ports and a USB C port" data-gallery-group="solar-vehicle">
+                    </div>
                 </div>
             </li>
 
             <li class="project-item">
                 <img class="project-thumb" src="../assets/img/av_research.jpg"
-                    alt="AV Research" data-project="battery-management">
+                    alt="AV Research" data-project="battery-management"
+                    data-caption="Sensor Fusion Setup — AgileX Hunter 2.0 Robot">
                 <div class="project-info">
                     <h3 class="project-title" data-project="battery-management">Research : Autonomous Vehicles over Bandwidth Constrained Networks</h3>
                     <p class="project-desc">Under the Computer Network and AI Research Lab, I research and develop autonomous vehicle and teleoperation systems
@@ -65,8 +75,9 @@
             </li>
 
             <li class="project-item">
-                <img class="project-thumb" src="../assets/img/robot_research.png"
-                    alt="Indoor Robot Navigation" data-project="indoor-navigation">
+                <img class="project-thumb" src="../assets/img/robot_research.jpg"
+                    alt="Indoor Robot Navigation" data-project="indoor-navigation"
+                    data-caption="Robotic Manipulation Research">
                 <div class="project-info">
                     <h3 class="project-title" data-project="indoor-navigation">Research : Robotic Manipulation</h3>
                     <p class="project-desc">Under the Human Centered Computing Lab, I am conducting research on robotic manipulation using diffusion based learning
@@ -75,8 +86,41 @@
             </li>
 
             <li class="project-item">
+                <img class="project-thumb" src="../assets/img/team.jpeg" alt="AllerSight"
+                    data-caption="AllerSight — O1 Summit Hackathon">
+                <div class="project-info">
+                    <h3 class="project-title project-title--with-link" data-project="autonomous-rc-car">
+                        <a href="https://www.youtube.com/watch?v=qBpOIuomM3g" target="_blank" rel="noopener noreferrer">AllerSight - O1 Summit Hackathon by Origin House, AWS, Vercel, Stripe,etc.</a>
+                        <a href="https://www.youtube.com/watch?v=qBpOIuomM3g" target="_blank" rel="noopener noreferrer" class="project-github-link" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a>
+                    </h3>
+                    <p class="project-desc">As part of the O1 Summit hackathon, my team and I built AllerSight, a real time allergen safety system that combines
+                    embedded hardware, computer vision, and agent based pipelines to reduce cross contamination risk in kitchens. We further extended the pipeline by
+                    feeding detection outputs into TinyFish agents that scrape and analyze local restaurant menus to recommend safe dining
+                    options.
+                    <br> <br> I was in charge of the embedded hardware and computer vision components, where we
+                    prototyped smart glasses using a Raspberry Pi and webcam and streamed the video for processing in our backend for real time
+                    ingredient detection and tracking across hands, tools, and surfaces. The system maintains a ‘contamination memory’ that
+                    updates continuously and resets upon detecting wash events, while generating timestamped logs for compliance and other
+                    business needs. 
+                    <br>
+                    <br> Click the youtube link (in the title) above to see the demo.
+                    </p>
+                    <div class="project-sub-images">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/allersight2.jpg" alt="Smart glasses prototype with Raspberry Pi and webcam"
+                            data-caption="Smart glasses prototype with Raspberry Pi and webcam" data-gallery-group="solar-vehicle">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/allersight.jpg" alt="The concept"
+                            data-caption="The concept" data-gallery-group="solar-vehicle">
+                        <img class="project-thumb project-sub-thumb" src="../assets/img/bts.jpg" alt="Behind the scenes"
+                            data-caption="Behind the scenes" data-gallery-group="solar-vehicle">
+                    
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-item">
                 <img class="project-thumb" src="../assets/img/rc_car.jpg"
-                    alt="Portfolio Website" data-project="portfolio-website">
+                    alt="Portfolio Website" data-project="portfolio-website"
+                    data-caption="Obstacle Avoiding RC Car">
                 <div class="project-info">
                     <h3 class="project-title" data-project="portfolio-website">Obstacle Avoiding RC Car</h3>
                     <p class="project-desc">As part of a personal project I developed an obstacle avoiding RC car using a servo mounted VL53L1X Time of Flight
@@ -87,7 +131,8 @@
             </li>
             <li class="project-item">
                 <img class="project-thumb" src="../assets/img/baby_pcb_cad.png" alt="Baby Monitor"
-                    data-project="indoor-navigation">
+                    data-project="indoor-navigation"
+                    data-caption="Custom PCB & CAD Enclosure — Baby Monitor">
                 <div class="project-info">
                     <h3 class="project-title" data-project="indoor-navigation">Baby Monitor</h3>
                     <p class="project-desc">For an Intro to Microcontrollers course, my peers and I developed a baby monitor device centered around two breadboards with 
@@ -100,14 +145,18 @@
                 complex systems, as reflected in my work on the solar vehicle project and other embedded hardware designs.
             </p>
                 </div>
-            </li>
         </ul>
     </section>
 
     <!-- Image Gallery Modal -->
     <div id="galleryModal" class="gallery-modal">
         <span class="gallery-close">&times;</span>
-        <img class="gallery-content" id="galleryImage" alt="Project Gallery">
+        <button class="gallery-nav gallery-prev" id="galleryPrev">&#10094;</button>
+        <div class="gallery-wrapper">
+            <img class="gallery-content" id="galleryImage" alt="Project Gallery">
+            <p class="gallery-caption" id="galleryCaption"></p>
+        </div>
+        <button class="gallery-nav gallery-next" id="galleryNext">&#10095;</button>
     </div>
 
     <!--===== FOOTER =====-->
@@ -144,15 +193,59 @@
         // Image gallery functionality
         const galleryModal = document.getElementById('galleryModal');
         const galleryImage = document.getElementById('galleryImage');
+        const galleryCaption = document.getElementById('galleryCaption');
         const galleryClose = document.querySelector('.gallery-close');
+        const galleryPrev = document.getElementById('galleryPrev');
+        const galleryNext = document.getElementById('galleryNext');
         const projectThumbs = document.querySelectorAll('.project-thumb');
+
+        let currentGroup = [];
+        let currentIndex = 0;
+
+        function showImage(img) {
+            galleryImage.src = img.src;
+            galleryImage.alt = img.alt;
+            galleryCaption.textContent = img.getAttribute('data-caption') || '';
+        }
+
+        function navigate(dir) {
+            if (currentGroup.length < 2) return;
+            currentIndex = (currentIndex + dir + currentGroup.length) % currentGroup.length;
+            showImage(currentGroup[currentIndex]);
+        }
 
         projectThumbs.forEach(thumb => {
             thumb.addEventListener('click', function () {
+                const group = this.getAttribute('data-gallery-group');
+                if (group) {
+                    currentGroup = Array.from(document.querySelectorAll(`[data-gallery-group="${group}"]`));
+                    currentIndex = currentGroup.indexOf(this);
+                    galleryModal.classList.add('has-nav');
+                } else {
+                    currentGroup = [];
+                    currentIndex = 0;
+                    galleryModal.classList.remove('has-nav');
+                }
+                showImage(this);
                 galleryModal.classList.add('show');
-                galleryImage.src = this.src;
-                galleryImage.alt = this.alt;
             });
+        });
+
+        galleryPrev.addEventListener('click', function (e) {
+            e.stopPropagation();
+            navigate(-1);
+        });
+
+        galleryNext.addEventListener('click', function (e) {
+            e.stopPropagation();
+            navigate(1);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (!galleryModal.classList.contains('show')) return;
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+            if (e.key === 'Escape') galleryModal.classList.remove('show');
         });
 
         galleryClose.addEventListener('click', function () {

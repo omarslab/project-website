@@ -283,10 +283,54 @@ img {
   font-size: 1.1rem;
 }
 
+.project-title--with-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.project-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-title a:hover {
+  color: var(--first-color);
+}
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.project-github-link:hover {
+  color: var(--first-color);
+}
+
 .project-desc {
   margin: 0.3rem 0 0;
   color: #666;
   line-height: 1.4;
+}
+
+.project-sub-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.project-sub-thumb {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 
@@ -454,6 +498,7 @@ img {
   transform: scale(1.1);
 }
 
+
 /* Project title hover color */
 .project-title:hover {
   color: var(--first-color);
@@ -477,12 +522,28 @@ img {
   display: flex;
 }
 
-.gallery-content {
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 95vw;
   max-height: 95vh;
+}
+
+.gallery-content {
+  max-width: 95vw;
+  max-height: 88vh;
   object-fit: contain;
   border-radius: 8px;
   animation: zoomIn 0.3s ease;
+}
+
+.gallery-caption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  margin: 0.6rem 0 0;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .gallery-close {
@@ -498,6 +559,35 @@ img {
 
 .gallery-close:hover {
   color: var(--first-color);
+}
+
+.gallery-nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  z-index: 1001;
+  line-height: 1;
+}
+
+.gallery-nav:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--first-color);
+}
+
+.gallery-prev { left: 20px; }
+.gallery-next { right: 20px; }
+
+.gallery-modal.has-nav .gallery-nav {
+  display: block;
 }
 
 @keyframes zoomIn {
@@ -545,6 +635,16 @@ img {
   .project-info {
     max-width: 100%;
     /* allow description to fill width */
+  }
+
+
+  .project-sub-images {
+    justify-content: center;
+  }
+
+  .project-sub-thumb {
+    width: 80px;
+    height: 80px;
   }
 }
 
